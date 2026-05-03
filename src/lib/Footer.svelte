@@ -1,5 +1,5 @@
 <footer class="footer">
-    <p>© 2026 Carlow Tourism</p>
+    <p>© Vanessa Juszczak</p>
 </footer>
 
 
@@ -16,12 +16,11 @@
         font-family: var(--font-body);
         font-size: var(--font-sm);
         color: var(--text-contrast);
-        background-color: var(--color-secondary);
-        border-top: 1px solid var(--color-border);
+        background-color: var(--color-panel);
+        border-top: 1px solid var(--color-line);
         box-shadow: var(--shadow-sm);
         position: relative;
         z-index: 10;
-        animation: fadeInFooter var(--transition-slow) ease-in-out;
     }
 
     .footer::before {

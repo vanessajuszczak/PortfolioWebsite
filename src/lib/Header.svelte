@@ -14,29 +14,23 @@
 
 <style>
     .header {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 180px 1fr;
         align-items: center;
-        padding: 0 var(--space-lg);
-        background-color: var(--color-secondary);
-        box-shadow: var(--shadow-md);
-        border-bottom: 1px solid var(--color-border);
-        position: relative;
-        z-index: 100;
+        gap: var(--space-md);
+        padding: 1px var(--space-xl) 1px;
+        border-bottom: 1px solid var(--color-line);
     }
 
     .logo-area {
-        display: flex;
+        display: inline-flex;
         align-items: center;
-        gap: var(--space-sm);
-        font-family: var(--font-heading);
+        width: 110px;
     }
 
     .logo-area img {
-        width: 96px;
+        width: 100%;
         height: auto;
-        border-radius: 0;
-        box-shadow: none;
     }
 
     @keyframes fadeInTitle {
@@ -50,22 +44,14 @@
         }
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 760px) {
         .header {
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            padding: var(--space-sm) var(--space-md);
+            grid-template-columns: 1fr auto;
+            padding: 18px 18px 10px;
         }
 
         .logo-area {
-            justify-content: flex-start;
-            width: auto;
-        }
-
-        .logo-area img {
-            width: 72px;
-            height: auto;
+            width: 92px;
         }
     }
 </style>

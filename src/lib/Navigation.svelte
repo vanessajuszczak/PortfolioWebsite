@@ -5,10 +5,9 @@
 
     const navigationItems = [
         { name: 'About', path: '/about/' },
-        { name: 'Things to Do', path: '/things-to-do/' },
-        { name: 'Guides', path: '/guides/' },
-        { name: 'User Reviews', path: '/user-reviews/' },
-        { name: 'Contact Us', path: '/contact/' }
+        { name: 'Projects', path: '/projects/' },
+        { name: 'CV', path: '/cv/' },
+        { name: 'Contact', path: '/contact/' }
     ];
 
     let isOpen = false;
@@ -46,18 +45,13 @@
 
 <style>
     .nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        gap: var(--space-lg);
-        animation: fadeIn var(--transition-slow);
-        position: relative;
+        justify-self: stretch;
     }
 
     .nav ul {
         display: flex;
-        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
         gap: var(--space-md);
         list-style: none;
         margin: 0;
@@ -72,19 +66,15 @@
     .nav-item:nth-child(2) { animation-delay: 0.4s; }
     .nav-item:nth-child(3) { animation-delay: 0.6s; }
     .nav-item:nth-child(4) { animation-delay: 0.8s; }
-    .nav-item:nth-child(5) { animation-delay: 1s; }
 
     .nav a {
-        position: relative;
-        display: block;
-        font-family: var(--font-body);
-        font-size: var(--font-lg);
-        font-weight: 600;
-        color: var(--text-contrast);
-        padding: var(--space-xs) var(--space-sm);
-        text-decoration: none;
-        transition: color var(--transition-fast);
-        white-space: nowrap;
+        display: inline-flex;
+        min-height: 10px;
+        align-items: center;
+        font-size: var(--font-base);
+        font-weight: 700;
+        color: var(--text-primary);
+        text-transform: uppercase;
     }
 
     .nav a::after {
@@ -109,39 +99,37 @@
     .nav a:hover,
     .nav a:focus,
     .nav a.active {
-        color: var(--color-accent);
+        color: var(--color-accent-soft);
     }
 
     .burger {
         display: none;
-        font-size: var(--font-xl);
-        background: none;
-        border: none;
-        color: var(--text-contrast);
-        padding: var(--space-xs);
-        cursor: pointer;
-        margin: 0;
+        background: transparent;
+        border: 1px solid var(--color-accent-soft);
+        border-radius: var(--radius-sm);
+        color: var(--text-primary);
+        padding: 0.4rem 0.7rem;
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 760px) {
         .nav {
-            width: auto;
-            margin-left: auto;
+            justify-self: end;
+            position: relative;
         }
 
         .nav ul {
             display: none;
             position: absolute;
-            top: calc(100% + 8px);
+            top: calc(100% + 10px);
             right: 0;
             flex-direction: column;
-            gap: var(--space-sm);
-            min-width: 220px;
-            background: var(--color-secondary);
+            min-width: 150px;
+            align-items: center;
+            background: var(--color-panel);
             padding: var(--space-sm);
+            border: 1px solid var(--color-line);
             border-radius: var(--radius-md);
-            box-shadow: var(--shadow-md);
-            z-index: 200;
+            z-index: 10;
         }
 
         .nav ul.open {
@@ -149,12 +137,12 @@
         }
 
         .burger {
-            display: block;
+            display: inline-flex;
         }
 
-        .nav li,
         .nav a {
             width: 100%;
+            justify-content: center;
         }
 
         .nav-item {
