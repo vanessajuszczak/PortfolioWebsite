@@ -19,6 +19,13 @@
         description: 'Short desc of project 3'
     }
    ];
+
+   let arrowClicked = false;
+
+   function handleArrowClick() {
+    arrowClicked = true;
+   }
+
 </script>
 
 <!-- Page Container -->
@@ -30,7 +37,14 @@
             </p>
             <h1 id="home-title">Vanessa</h1>
             <p class="desc-line">Short description</p>
-            <a class="down-arrow" href="#featured" aria-label="Skip to featured projects">↡</a>
+            <a class="down-arrow"
+                class:active={arrowClicked}
+                href="#featured"
+                on:click={handleArrowClick}
+                aria-label="Skip to featured projects"
+            >
+                ↡
+            </a>
         </div>
     </section>
 
@@ -50,7 +64,7 @@
             {/each}
         </div>
 
-        <a class="featured-button" href={resolve('/projects/')}>View All Projects -></a>
+        <a class="featured-button" href={resolve('/projects/')}>View All Projects ➜</a>
      </section>
 
 
@@ -97,9 +111,31 @@
     }
 
     .down-arrow {
+        position: relative;
+        display: inline-block;
         color: var(--color-accent);
         font-size: var(--space-xl);
-        line-height: 1.5;
+        line-height: 1;
+        margin-top: 1rem;
+
+        transition: margin-top 0.4s ease;
+        animation: pulseGlow 2s ease-in-out infinite;
+    }
+
+    .down-arrow::before {
+        content: "";
+        position: absolute;
+        bottom: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 4px;
+        height: 30px;
+        background: var(--color-accent);
+        transition: height 0.4s ease;
+    }
+
+    .down-arrow.active {
+        animation: none;
     }
     
 
@@ -125,10 +161,72 @@
 
     .featured-button {
         margin-top: var(--space-lg);
+        font-size: var(--font-md);
     }
 
     #featured-title {
-        min-height: 12vh;
+        min-height: 10vh;
         font-size: var(--font-xl);
+    }
+
+    :global(html) {
+        scroll-behavior: smooth;
+    }
+
+    @keyframes pulseGlow {
+        0% {
+            transform: scale(1);
+            text-shadow: 0 0 5px var(--color-accent);
+        }
+
+        50% {
+            transform: scale(1.1);
+            text-shadow: 0 0 15px var(--color-accent);
+        }
+
+        100% {
+            transform: scale(1);
+            text-shadow: 0 0 5px var(--color-accent);
+        }
+    }
+
+    @media (min-width: 1300px) {
+        .hero {
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 200px;
+        }
+
+        .intro-line {
+            font-size: var(--font-xl);
+        }
+
+        .intro-line::after {
+            width: 560px;
+            height: 2px;
+        }
+
+        .desc-line {
+            font-size: var(--font-lg);
+        }
+
+        #featured-title {
+            font-size: var(--font-xxl);
+        }
+
+        .featured-button {
+            font-size: var(--font-lg);
+        }
+
+        .down-arrow.active {
+            margin-top: 40vh;
+        }
+
+        .down-arrow.active::before {
+            height: 350px;
+        }
+
     }
 </style>

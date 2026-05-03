@@ -11,7 +11,7 @@
     {#if description}
         <p>{description}</p>
     {/if}
-    <a class="featured-button" href={href}>{buttonLabel} -></a>
+    <a class="featured-button" href={href}>{buttonLabel} ➜</a>
 </article>
 
 <style>
@@ -32,19 +32,40 @@
     }
 
     h3 {
-        margin-bottom: var(--space-xs);
-        font-size: var(--font-sm);
+        margin-bottom: var(--space-md);
+        font-size: var(--font-md);
     }
 
     p {
         min-height: 32px;
         margin: 0 0 10px;
-        font-size: var(--font-xs);
+        font-size: var(--font-sm);
         line-height: 1.2;
     }
 
     .featured-button {
         width: 100%;
         min-height: 28px;
+        font-size: var(--font-sm);
+    }
+
+    @media (min-width: 1300px) {
+        .project-card {
+            width: 500px;
+            margin-top: 20px;
+        }
+
+        .featured-button {
+            min-height: 40px;
+            font-size: var(--font-lg);
+        }
+
+        p {
+            font-size: var(--font-md);
+        }
+
+        h3 {
+            font-size: var(--font-lg);
+        }
     }
 </style>
