@@ -1,13 +1,17 @@
+<script>
+    import {base} from '$app/paths';
+</script>
+
 <footer class="footer">
     <div class="socials">
         <a href="https://www.youtube.com/@xnesswag" target="_blank" aria-label="Youtube">
-            <img src="/images/footer/youtube.png" alt="Youtube" />
+            <img src={base + "/images/footer/youtube.png"} alt="Youtube" />
         </a>
         <a href="https://www.tiktok.com/@popscicle03" target="_blank" aria-label="Tiktok">
-            <img src="/images/footer/tiktok.png" alt="Tiktok" />
+            <img src={base + "/images/footer/tiktok.png"} alt="Tiktok" />
         </a>
         <a href="https://www.twitch.tv/xnesswag" target="_blank" aria-label="Twitch">
-            <img src="/images/footer/twitch.png" alt="Twitch" />
+            <img src={base + "/images/footer/twitch.png"} alt="Twitch" />
         </a>
     </div>
     <p>© Vanessa Juszczak</p>
