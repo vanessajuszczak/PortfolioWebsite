@@ -19,7 +19,15 @@ body {
     font-size: var(--font-base);
     line-height: 1.5;
     color: var(--text-primary);
-    background: var(--color-background);
+    background: 
+        linear-gradient(
+            to bottom,
+            var(--color-purple-top) 0%,
+            #120820 20%,
+            #000000 50%,
+            #120820 85%,
+            var(--color-purple-bottom) 100%
+        );
 }
 
 /* === Layout === */
@@ -97,20 +105,20 @@ img {
     min-width: 122px;
     min-height: 32px;
     padding: var(--space-xs) var(--space-md);
-    border: 1.5px solid rgba(216, 194, 255, 0.62);
+    border: 1.5px solid var(--color-accent-soft);
     border-radius: var(--radius-md);
-    background: linear-gradient(180deg, #bb8cff 0%, #6d36bd 100%);
+    background: linear-gradient(180deg, var(--color-accent-soft) 0%, var(--color-purple-top) 100%);
     color: var(--text-contrast);
     font-size: var(--font-xs);
     font-weight: 700;
     text-transform: uppercase;
-    box-shadow: inset 0 1px 4px rgba(255, 255, 255, 0.35);
+    box-shadow: inset 0 1px 4px var(--color-purple-top);
 }
 
 .featured-button:hover,
 .featured-button:focus {
     transform: translateY(1px);
-    background: linear-gradient(180deg, #cfadff 0%, #7c42d1 100%);
+    background: linear-gradient(180deg, var(--color-accent) 0%, var(--color-purple-bottom) 100%);
 }
 
 .placeholder-art {
@@ -151,5 +159,11 @@ textarea {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media (min-width: 1300px) {
+    .featured-button {
+        border: 2px solid var(--color-accent-soft);
     }
 }

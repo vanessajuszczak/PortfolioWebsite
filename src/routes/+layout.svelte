@@ -25,7 +25,6 @@
         display: flex;
         flex-direction: column;
         min-height: 100vh;
-        background-color: var(--color-background);
         color: var(--text-primary);
         font-family: var(--font-body);
     }
@@ -37,7 +36,6 @@
         flex-direction: column;
         position: relative;
         isolation: isolate;
-        background-color: var(--color-background);
     }
 
     main::before {

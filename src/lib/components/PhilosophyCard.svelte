@@ -58,7 +58,6 @@
     .back {
         transform: rotateY(180deg);
         z-index: 1;
-        background: var(--color-background);
         color: var(--text-secondary);
         font-style: italic;
         font-size: var(--font-sm);

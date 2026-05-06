@@ -1,14 +1,16 @@
 <script>
     import { page } from '$app/state';
-    import {resolve} from '$app/paths';
+    import {asset, resolve} from '$app/paths';
+    
     
 
-    const navigationItems = [
+    const mainNavigationItems = [
         { name: 'About', path: '/about/' },
         { name: 'Projects', path: '/projects/' },
-        { name: 'CV', path: '/cv/' },
-        { name: 'Contact', path: '/contact/' }
+        { name: 'CV', path: '/cv/' }
     ];
+
+    const contactNavigationItem = { name: 'Contact', path: '/contact/' };
 
     let isOpen = false;
 
@@ -19,6 +21,10 @@
 
 
 <nav class="nav" aria-label="Main navigation">
+    <a href={resolve('/')} class="logo-area">
+        <img src={asset("/logo.png")} alt="Site Logo" />
+    </a>
+
     <button
         class="burger"
         on:click={() => (isOpen = !isOpen)}
@@ -30,7 +36,7 @@
     </button>
 
     <ul id="main-menu" class:open={isOpen}>
-        {#each navigationItems as item}
+        {#each mainNavigationItems as item}
             <li class="nav-item">
                 <a 
                     href={resolve(item.path)}
@@ -40,19 +46,53 @@
             </li>
         {/each}
     </ul>
+
+    <div class="contact-nav">
+        <a href={resolve(contactNavigationItem.path)} class="contact-button">
+            {contactNavigationItem.name}
+        </a>
+    </div>
 </nav>
 
 
 <style>
     .nav {
-        justify-self: stretch;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        width: 100%;
+    }
+
+    .logo-area {
+        display: inline-flex;
+        align-items: center;
+        width: 110px;
+    }
+
+    .logo-area img {
+        width: 100%;
+        height: auto;
+    }
+
+    #main-menu {
+        justify-self: center;
+    }
+
+    .contact-nav {
+        justify-self: end;
+    }
+
+    .contact-button {
+        border: 2px solid var(--color-accent-soft);
+        border-radius: var(--radius-md);
+        padding: 0.4rem 0.8rem;
     }
 
     .nav ul {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: var(--space-md);
+        gap: var(--space-xl);
         list-style: none;
         margin: 0;
         padding: 0;
@@ -71,7 +111,7 @@
         display: inline-flex;
         min-height: 10px;
         align-items: center;
-        font-size: var(--font-base);
+        font-size: var(--font-md);
         font-weight: 700;
         color: var(--text-primary);
         text-transform: uppercase;

@@ -72,7 +72,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: var(--color-background);
         overflow: hidden;
         height: 320px;
     }

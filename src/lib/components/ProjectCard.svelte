@@ -2,17 +2,15 @@
     export let title;
     export let description = '';
     export let href = '#';
-    export let buttonLabel = 'View';
 </script>
 
-<article class="project-card">
+<a href={href} class="project-card">
     <div class="placeholder-art project-image" role="img" aria-label="Project image"></div>
     <h3>{title}</h3>
     {#if description}
         <p>{description}</p>
     {/if}
-    <a class="featured-button" href={href}>{buttonLabel} ➜</a>
-</article>
+</a>
 
 <style>
     .project-card {
@@ -20,8 +18,14 @@
         padding: var(--space-xs) var(--space-sm) var(--space-sm);
         border: 1.5px solid var(--color-accent);
         border-radius: var(--radius-md);
-        background: linear-gradient(180deg, rgba(118, 61, 196, 0.42), rgba(13, 2, 28, 0.8));
+        background: linear-gradient(180deg, var(--color-panel), var(--color-purple-bottom));
         text-align: center;
+        transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    }
+
+    .project-card:hover {
+        transform: translateY(-6px) scale(1.02);
+        box-shadow: 0 0 20px var(--color-accent);
     }
 
     .project-image {
@@ -43,21 +47,11 @@
         line-height: 1.2;
     }
 
-    .featured-button {
-        width: 100%;
-        min-height: 28px;
-        font-size: var(--font-sm);
-    }
-
     @media (min-width: 1300px) {
         .project-card {
             width: 500px;
-            margin-top: 20px;
-        }
-
-        .featured-button {
-            min-height: 40px;
-            font-size: var(--font-lg);
+            margin-top: var(--space-md);
+            border: 2px solid var(--color-accent);
         }
 
         p {

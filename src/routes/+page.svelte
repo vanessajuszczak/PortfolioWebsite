@@ -7,16 +7,16 @@
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
    const featuredProjects = [
     {
-        title: 'Project 1 Title',
-        description: 'Short desc of project 1'
+        title: 'Shopping Game',
+        description: 'The player must add items from their shopping list to the cart.'
     },
     {
-        title: 'Project 2 Title',
-        description: 'Short desc of project 2'
+        title: 'Fantasy Game Original Character',
+        description: 'Concept art of an original character designed for a fantasy-style game.'
     },
     {
-        title: 'Project 3 Title',
-        description: 'Short desc of project 3'
+        title: 'Walk Cycle Animation',
+        description: 'An animation showcasing a walk cycle of an original character.'
     }
    ];
 
@@ -36,7 +36,7 @@
                 Hi, I'm
             </p>
             <h1 id="home-title">Vanessa</h1>
-            <p class="desc-line">Short description</p>
+            <p class="desc-line">Interactive Digital Art and Design student exploring web design, games, animation, and digital media.</p>
             <a class="down-arrow"
                 class:active={arrowClicked}
                 href="#featured"
@@ -59,7 +59,6 @@
                     title={project.title}
                     description={project.description}
                     href={project.href}
-                    buttonLabel="View" 
                 />
             {/each}
         </div>
@@ -74,6 +73,7 @@
         text-align: center;
         min-height: 85vh;
         display: grid;
+        flex-direction: column;
         justify-items: center;
         align-items: center;
         padding: 28px var(--space-md) 0;
@@ -82,12 +82,15 @@
     .intro-line {
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: var(--space-xs);
         margin: 0;
         color: var(--text-primary);
         font-size: var(--font-lg);
         font-weight: 700;
         text-transform: uppercase;
+        width: 100%;
+        max-width: 555px;
     }
 
     .intro-line::after {
@@ -95,7 +98,7 @@
         width: 340px;
         height: 1px;
         background: var(--color-accent);
-        margin-left: 10px;
+        margin-left: var(--space-sm);
     }
 
     h1 {
@@ -105,8 +108,11 @@
     }
 
     .desc-line {
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
         margin-bottom: var(--space-sm);
-        font-size: var(--font-md);
+        font-size: var(--font-sm);
         font-weight: 700;
     }
 
@@ -116,7 +122,7 @@
         color: var(--color-accent);
         font-size: var(--space-xl);
         line-height: 1;
-        margin-top: 1rem;
+        margin-top: var(--space-md);
 
         transition: margin-top 0.4s ease;
         animation: pulseGlow 2s ease-in-out infinite;
@@ -201,15 +207,18 @@
 
         .intro-line {
             font-size: var(--font-xl);
+            max-width: 670px;
         }
 
         .intro-line::after {
+            flex: 1;
             width: 560px;
             height: 2px;
         }
 
         .desc-line {
-            font-size: var(--font-lg);
+            font-size: var(--font-md);
+            max-width: 500px;
         }
 
         #featured-title {
