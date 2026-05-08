@@ -7,7 +7,7 @@
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
    const featuredProjects = [
     {
-        title: 'Shopping Game',
+        title: 'Shopping Collection Game',
         description: 'The player must add items from their shopping list to the cart.'
     },
     {

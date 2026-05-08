@@ -4,6 +4,10 @@
     import Footer from "$lib/Footer.svelte";
 </script>
 
+<svelte:head>
+    <title>Vanessa</title>
+</svelte:head>
+
 
 <div id="layout-container">
     <!-- Header -->
