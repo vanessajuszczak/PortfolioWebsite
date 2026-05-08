@@ -8,15 +8,18 @@
    const featuredProjects = [
     {
         title: 'Shopping Collection Game',
-        description: 'The player must add items from their shopping list to the cart.'
+        description: 'The player must add items from their shopping list to the cart.',
+        href: '/projects/games/project1'
     },
     {
         title: 'Fantasy Game Original Character',
-        description: 'Concept art of an original character designed for a fantasy-style game.'
+        description: 'Concept art of an original character designed for a fantasy-style game.',
+        href: '/projects/digital-art/project2'
     },
     {
         title: 'Walk Cycle Animation',
-        description: 'An animation showcasing a walk cycle of an original character.'
+        description: 'An animation showcasing a walk cycle of an original character.',
+        href: '/projects/digital-art/project3'
     }
    ];
 

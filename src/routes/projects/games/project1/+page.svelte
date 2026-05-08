@@ -31,7 +31,37 @@
     </div>
 </div>
 
+<div class="button-wrapper">
+ <a class="back-button" href="/projects/games">
+        🡐 Back to Games
+    </a>
+</div>
+
 <style>
+    .button-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: var(--space-xl);
+    }
+
+    .back-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: var(--space-xs) var(--space-sm);
+        border: 2px solid var(--color-accent);
+        border-radius: var(--radius-md);
+
+        font-size: var(--font-md);
+        color: var(--text-primary);
+
+        transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    }
+
+    .back-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 10px var(--color-accent);
+    }
     .project-page {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -102,6 +132,10 @@
         }
 
         .project-details {
+            font-size: var(--font-lg);
+        }
+
+        .back-button {
             font-size: var(--font-lg);
         }
     }

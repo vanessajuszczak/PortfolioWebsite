@@ -1,4 +1,5 @@
 <script>
+    import {base} from '$app/paths';
     import ProjectCard from '$lib/components/ProjectCard.svelte';
 
     export let params;
@@ -9,16 +10,16 @@
         games: [
             {title: 'Shopping Collection Game', description: 'The player must add items from their shopping list to the cart.', href: '/projects/games/project1'},
             {title: 'Side Scrolling Shooter Game', description: 'The player must shoot enemies to reach a score of 50.', href: '/projects/games/project2'},
-            {title: 'Game 3', description: 'Desc', href: '/projects/games/project3'},
-            {title: 'Game 4', description: 'Desc', href: '/projects/games/project4'},
-            {title: 'Game 5', description: 'Desc', href: '/projects/games/project5'}
+            {title: 'Game 3', description: 'Desc', href: base + '/projects/games/project3'},
+            {title: 'Game 4', description: 'Desc', href: base + '/projects/games/project4'},
+            {title: 'Game 5', description: 'Desc', href: base + '/projects/games/project5'}
         ],
         'digital-art': [
-            {title: 'Animation 1', description: 'Desc', href: '#'},
-            {title: 'Illustration 1', description: 'Desc', href: '#'},
-            {title: 'Game Asset 1', description: 'Desc', href: '#'},
-            {title: 'Game Asset 2', description: 'Desc', href: '#'},
-            {title: 'Illustration 2', description: 'Desc', href: '#'}
+            {title: 'Basic Animations', description: 'Three basic beginner animations to showcase skills.', href: base + '/projects/digital-art/project1'},
+            {title: 'Fantasy Game Original Character', description: 'Concept art of an original character designed for a fantasy-style game.', href: base + '/projects/digital-art/project2'},
+            {title: 'Walk Cycle Animation', description: 'An animation showcasing a walk cycle of an original character.', href: base + '/projects/digital-art/project3'},
+            {title: 'Head-turn Animation', description: 'An animation showcasing a head-turn with expression change of an original character.', href: base + '/projects/digital-art/project4'},
+            {title: 'Illustration 2', description: 'Desc', href: base + '/projects/digital-art/project5'}
         ],
         '3d': [
             {title: '3D Model 1', description: 'Desc', href:'#'},
