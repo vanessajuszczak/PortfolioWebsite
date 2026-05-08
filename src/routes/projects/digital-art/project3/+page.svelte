@@ -32,7 +32,7 @@
 </div>
 
 <div class="button-wrapper">
- <a class="back-button" href="/projects/digital-art">
+ <a class="back-button" href={base +"/projects/digital-art"}>
         🡐 Back to Digital Art
     </a>
 </div>

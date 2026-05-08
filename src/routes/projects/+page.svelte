@@ -30,7 +30,7 @@
                 <div class="placeholder-art image"></div>
                 <h2>{category.title}</h2>
                 <p>{category.description}</p>
-                <a class="button"  href={resolve(category.href)}>Continue ➜</a>
+                <a class="button"  href={category.href}>Continue ➜</a>
             </div>
         {/each}
     </div>
