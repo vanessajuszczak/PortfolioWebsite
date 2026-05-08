@@ -30,9 +30,5 @@
             grid-template-columns: 1fr auto;
             padding: 18px 18px 10px;
         }
-
-        .logo-area {
-            width: 92px;
-        }
     }
 </style>
