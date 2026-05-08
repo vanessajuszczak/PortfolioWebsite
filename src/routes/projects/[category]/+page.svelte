@@ -8,8 +8,8 @@
 
     const projectData = {
         games: [
-            {title: 'Shopping Collection Game', description: 'The player must add items from their shopping list to the cart.', href: '/projects/games/project1'},
-            {title: 'Side Scrolling Shooter Game', description: 'The player must shoot enemies to reach a score of 50.', href: '/projects/games/project2'},
+            {title: 'Shopping Collection Game', description: 'The player must add items from their shopping list to the cart.', href: base + '/projects/games/project1'},
+            {title: 'Side Scrolling Shooter Game', description: 'The player must shoot enemies to reach a score of 50.', href: base + '/projects/games/project2'},
             {title: 'Game 3', description: 'Desc', href: base + '/projects/games/project3'},
             {title: 'Game 4', description: 'Desc', href: base + '/projects/games/project4'},
             {title: 'Game 5', description: 'Desc', href: base + '/projects/games/project5'}

@@ -1,21 +1,22 @@
 <script>
+    import {base} from '$app/paths';
     import {resolve} from '$app/paths';
 
     const categories = [
         {
             title: 'Games',
             description: 'Game development projects',
-            href: '/projects/games'
+            href: base + '/projects/games'
         },
         {
             title: 'Digital Art',
             description: 'Animations, illustrations, and digital media projects',
-            href: '/projects/digital-art'
+            href: base + '/projects/digital-art'
         },
         {
             title: '3D Models',
             description: '3D assets, renders, and modelling projects',
-            href: '/projects/3d'
+            href: base + '/projects/3d'
         }
     ];
 </script>
