@@ -3,23 +3,24 @@
 </svelte:head>
 
 <script>
+    import {base} from '$app/paths';
     import { resolve, asset } from '$app/paths';
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
    const featuredProjects = [
     {
         title: 'Shopping Collection Game',
         description: 'The player must add items from their shopping list to the cart.',
-        href: '/projects/games/project1'
+        href: base + '/projects/games/project1'
     },
     {
         title: 'Fantasy Game Original Character',
         description: 'Concept art of an original character designed for a fantasy-style game.',
-        href: '/projects/digital-art/project2'
+        href: base + '/projects/digital-art/project2'
     },
     {
         title: 'Walk Cycle Animation',
         description: 'An animation showcasing a walk cycle of an original character.',
-        href: '/projects/digital-art/project3'
+        href: base + '/projects/digital-art/project3'
     }
    ];
 
