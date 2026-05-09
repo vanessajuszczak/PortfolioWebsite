@@ -10,7 +10,7 @@
         games: [
             {title: 'Shopping Collection Game', description: 'The player must add items from their shopping list to the cart.', href: base + '/projects/games/project1'},
             {title: 'Side Scrolling Shooter Game', description: 'The player must shoot enemies to reach a score of 50.', href: base + '/projects/games/project2'},
-            {title: 'Game 3', description: 'Desc', href: base + '/projects/games/project3'},
+            {title: 'The Descent', description: 'Advance through the floors, defeat the monster, and find a way to escape!', href: base + '/projects/games/project3'},
             {title: 'Game 4', description: 'Desc', href: base + '/projects/games/project4'},
             {title: 'Game 5', description: 'Desc', href: base + '/projects/games/project5'}
         ],
@@ -22,11 +22,11 @@
             {title: 'Illustration 2', description: 'Desc', href: base + '/projects/digital-art/project5'}
         ],
         '3d': [
-            {title: '3D Model 1', description: 'Desc', href:'#'},
-            {title: '3D Model 2', description: 'Desc', href:'#'},
-            {title: '3D Model 3', description: 'Desc', href:'#'},
-            {title: '3D Model 4', description: 'Desc', href:'#'},
-            {title: '3D Model 5', description: 'Desc', href:'#'}
+            {title: '3D Game Asset', description: 'A 3D model of a tube slide used as a finish goal in a game.', href: base + '/projects/3d/project1'},
+            {title: 'School Bus Model', description: 'A 3D model of a school bus with custom UV-mapping.', href: base + '/projects/3d/project2'},
+            {title: 'Random Basic 3D Models', description: 'A compilation of random 3D models, including scaffolding, a castle, a mug, and hands.', href: base + '/projects/3d/project3'},
+            {title: '3D Model 4', description: 'Desc', href: base + '/projects/3d/project4'},
+            {title: '3D Model 5', description: 'Desc', href: base + '/projects/3d/project5'}
         ]
     };
 

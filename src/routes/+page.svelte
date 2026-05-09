@@ -8,9 +8,9 @@
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
    const featuredProjects = [
     {
-        title: 'Shopping Collection Game',
-        description: 'The player must add items from their shopping list to the cart.',
-        href: base + '/projects/games/project1'
+        title: 'The Descent',
+        description: 'Advance through the floors, defeat the monster, and find a way to escape!',
+        href: base + '/projects/games/project3'
     },
     {
         title: 'Fantasy Game Original Character',
@@ -18,9 +18,9 @@
         href: base + '/projects/digital-art/project2'
     },
     {
-        title: 'Walk Cycle Animation',
-        description: 'An animation showcasing a walk cycle of an original character.',
-        href: base + '/projects/digital-art/project3'
+        title: '3D Game Asset',
+        description: 'A 3D model of a tube slide used as a finish goal in a game.',
+        href: base + '/projects/3d/project1'
     }
    ];
 

@@ -4,19 +4,19 @@
 
 <section class="project-page">
     <div class="hero-image">
-        <img src={base + '/images/games/project3/main.png'} alt="Game 3 Screenshot" />
+        <img src={base + '/images/3d/project4/main.jpg'} alt="3D Model 4 Screenshot" />
     </div>
 
     <div class="project-info">
-        <h1>The Descent</h1>
+        <h1>3D Model 4</h1>
 
         <p class="project-desc">
-            Advance through the floors, defeat the monster, and find a way to escape!
+            Description.
         </p>
 
         <div class="project-details">
-            <p><strong>Software:</strong> Visual Studio Code</p>
-            <p><strong>Year:</strong> 2025</p>
+            <p><strong>Software:</strong> software</p>
+            <p><strong>Year:</strong> year</p>
         </div>
     </div>
 </section>
@@ -25,15 +25,15 @@
     <h2>Gallery</h2>
 
     <div class="gallery-grid">
-        <img src={base + '/images/games/project3/ss1.png'} alt="Screenshot" />
-        <img src={base + '/images/games/project3/ss2.png'} alt="Screenshot" />
-        <img src={base + '/images/games/project3/ss3.png'} alt="Screenshot" />
+        <img src={base + '/images/3d/project4/main.jpg'} alt="Screenshot" />
+        <img src={base + '/images/3d/project4/main.jpg'} alt="Screenshot" />
+        <img src={base + '/images/3d/project4/main.jpg'} alt="Screenshot" />
     </div>
 </div>
 
 <div class="button-wrapper">
- <a class="back-button" href={base +"/projects/games"}>
-        🡐 Back to Games
+ <a class="back-button" href={base +"/projects/3d"}>
+        🡐 Back to 3D Models
     </a>
 </div>
 
@@ -136,7 +136,7 @@
             font-size: var(--font-lg);
         }
 
-         .back-button {
+        .back-button {
             font-size: var(--font-lg);
         }
     }

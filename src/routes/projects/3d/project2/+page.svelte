@@ -4,19 +4,19 @@
 
 <section class="project-page">
     <div class="hero-image">
-        <img src={base + '/images/games/project3/main.png'} alt="Game 3 Screenshot" />
+        <img src={base + '/images/3d/project2/main.jpg'} alt="3D Model 2 Screenshot" />
     </div>
 
     <div class="project-info">
-        <h1>The Descent</h1>
+        <h1>School Bus Model</h1>
 
         <p class="project-desc">
-            Advance through the floors, defeat the monster, and find a way to escape!
+            A 3D model of a school bus with custom UV-mapping.
         </p>
 
         <div class="project-details">
-            <p><strong>Software:</strong> Visual Studio Code</p>
-            <p><strong>Year:</strong> 2025</p>
+            <p><strong>Software:</strong> Maya 2026</p>
+            <p><strong>Year:</strong> 2026</p>
         </div>
     </div>
 </section>
@@ -25,15 +25,15 @@
     <h2>Gallery</h2>
 
     <div class="gallery-grid">
-        <img src={base + '/images/games/project3/ss1.png'} alt="Screenshot" />
-        <img src={base + '/images/games/project3/ss2.png'} alt="Screenshot" />
-        <img src={base + '/images/games/project3/ss3.png'} alt="Screenshot" />
+        <img src={base + '/images/3d/project2/ss1.png'} alt="UV Map" />
+        <img src={base + '/images/3d/project2/ss2.jpg'} alt="Render" />
+        <img src={base + '/images/3d/project2/ss3.jpg'} alt="Render" />
     </div>
 </div>
 
 <div class="button-wrapper">
- <a class="back-button" href={base +"/projects/games"}>
-        🡐 Back to Games
+ <a class="back-button" href={base +"/projects/3d"}>
+        🡐 Back to 3D Models
     </a>
 </div>
 
@@ -136,7 +136,7 @@
             font-size: var(--font-lg);
         }
 
-         .back-button {
+        .back-button {
             font-size: var(--font-lg);
         }
     }
