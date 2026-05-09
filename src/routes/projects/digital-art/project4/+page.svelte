@@ -122,6 +122,16 @@
         object-fit: cover;
     }
 
+    @media (max-width: 760px) {
+        .project-page {
+            display: flex;
+            flex-direction: column;
+            padding: var(--space-lg) var(--space-md);
+            gap: var(--space-lg);
+            text-align: center;
+        }
+    }
+
     @media (min-width: 1300px) {
         .gallery-grid img {
             width: 450px;

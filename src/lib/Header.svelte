@@ -27,8 +27,7 @@
 
     @media (max-width: 760px) {
         .header {
-            grid-template-columns: 1fr auto;
-            padding: 18px 18px 10px;
+            padding: 12px 16px;
         }
     }
 </style>

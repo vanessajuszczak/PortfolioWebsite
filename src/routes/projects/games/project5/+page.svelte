@@ -57,7 +57,7 @@
         color: var(--text-contrast);
         font-weight: 700;
         box-shadow: inset 0 1px 4px var(--color-purple-top);
-        
+
         transition: transform var(--transition-fast), box-shadow var(--transition-fast);
     }
 
@@ -120,6 +120,16 @@
         border-radius: var(--radius-md);
         border: 2px solid var(--color-line);
         object-fit: cover;
+    }
+
+    @media (max-width: 760px) {
+        .project-page {
+            display: flex;
+            flex-direction: column;
+            padding: var(--space-lg) var(--space-md);
+            gap: var(--space-lg);
+            text-align: center;
+        }
     }
 
     @media (min-width: 1300px) {

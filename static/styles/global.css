@@ -150,6 +150,11 @@ textarea {
     resize: vertical;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 /* === Animations === */
 @keyframes fadeIn {
     from {
@@ -165,5 +170,30 @@ textarea {
 @media (min-width: 1300px) {
     .featured-button {
         border: 2px solid var(--color-accent-soft);
+    }
+}
+
+@media (max-width: 760px) {
+    body {
+        background: linear-gradient(
+            to bottom,
+            var(--color-purple-top) 0%, 
+            #120820 12%,
+            #000000 45%,
+            #120820 82%,
+            var(--color-purple-bottom) 100%
+        );
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
     }
 }

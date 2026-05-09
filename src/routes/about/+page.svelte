@@ -107,7 +107,7 @@
         color: var(--color-accent);
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 760px) {
         .about-layout {
             grid-template-columns: 1fr;
         }

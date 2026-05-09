@@ -57,7 +57,7 @@
 
     @media (max-width: 768px) {
         main {
-            padding: var(--space-lg) var(--space-md);
+            padding: 0;
         }
     }
 </style>

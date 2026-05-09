@@ -64,6 +64,13 @@
         box-shadow: var(--shadow-md);
     }
 
+    @media (max-width: 760px) {
+        .download-button {
+            margin-bottom:  var(--space-lg);
+            font-size: var(--font-lg);
+        }
+    }
+
     @media (min-width: 1300px) {
         .cv-image img {
             max-width: 1100px;

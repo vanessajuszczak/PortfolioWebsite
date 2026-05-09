@@ -52,6 +52,8 @@
             />
         {/each}
     </div>
+
+    <p class="mobile-scroll-hint">Scroll to View Projects ➜</p>
 </section>
 
 <style>
@@ -98,6 +100,55 @@
     .category-page h1 {
         font-size: var(--font-xxl);
         margin-bottom: 0;
+    }
+
+    .mobile-scroll-hint {
+        display: none;
+    }
+
+    @media (max-width: 760px) {
+        .grid {
+            padding-bottom: var(--space-sm);
+            scrollbar-width: thin;
+            scrollbar-color: var(--color-accent) var(--color-purple-bottom);
+        }
+
+        .grid::-webkit-scrollbar {
+            height: 10px;
+        }
+
+        .grid::-webkit-scrollbar-track {
+            background: var(--color-purple-bottom);
+            border-radius: var(--radius-md);
+        }
+
+        .grid::-webkit-scrollbar-thumb {
+            background: var(--color-accent);
+            border-radius: var(--radius-md);
+        }
+
+        .mobile-scroll-hint {
+            display: block;
+            margin: var(--space-sm) auto var(--space-lg);
+            margin-top: var(--space-lg);
+            color: var(--text-secondary);
+            font-size: var(--font-md);
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .category-page {
+            padding: 60px var(--space-lg) var(--space-md);
+        }
+
+        .category-page h1 {
+            margin-bottom: var(--space-lg);
+        }
+
+        .grid {
+            padding: 0 0 var(--space-lg);
+            gap: var(--space-md);
+        }
     }
 
     @media (min-width: 1300px) {

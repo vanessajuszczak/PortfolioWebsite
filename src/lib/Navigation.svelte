@@ -45,6 +45,14 @@
                 >{item.name}</a>
             </li>
         {/each}
+
+        <li class="nav-item mobile-contact">
+            <a href={resolve(contactNavigationItem.path)}
+            class:active={page.url.pathname === resolve(contactNavigationItem.path)}
+            on:click={hideMenu}>
+                {contactNavigationItem.name}
+            </a>
+        </li>
     </ul>
 
     <div class="contact-nav">
@@ -117,7 +125,7 @@
         text-transform: uppercase;
     }
 
-    .nav a::after {
+    .nav-item a::after {
         content: '';
         position: absolute;
         left: 0;
@@ -130,15 +138,15 @@
         transition: transform var(--transition-fast);
     }
 
-    .nav a:hover::after,
-    .nav a:focus::after,
-    .nav a.active::after {
+    .nav-item a:hover::after,
+    .nav-item a:focus::after,
+    .nav-item a.active::after {
         transform: scaleX(1);
     }
 
-    .nav a:hover,
-    .nav a:focus,
-    .nav a.active {
+    .nav-item a:hover,
+    .nav-item a:focus,
+    .nav-item a.active {
         color: var(--color-accent-soft);
     }
 
@@ -151,25 +159,30 @@
         padding: 0.4rem 0.7rem;
     }
 
+    .mobile-contact {
+        display: none;
+    }
+
     @media (max-width: 760px) {
         .nav {
-            justify-self: end;
+            grid-template-columns: 1fr auto;
             position: relative;
         }
 
         .nav ul {
             display: none;
             position: absolute;
-            top: calc(100% + 10px);
+            top: 55px;
             right: 0;
+            width: 220px;
             flex-direction: column;
-            min-width: 150px;
-            align-items: center;
+            gap: var(--space-md);
+            align-items: flex-end;
             background: var(--color-panel);
-            padding: var(--space-sm);
+            padding: var(--space-md);
             border: 1px solid var(--color-line);
             border-radius: var(--radius-md);
-            z-index: 10;
+            z-index: 20;
         }
 
         .nav ul.open {
@@ -178,16 +191,25 @@
 
         .burger {
             display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border: 0;
+            font-size: var(--font-xl);
+            color: var(--text-primary);
+            background: transparent;
         }
 
         .nav a {
-            width: 100%;
-            justify-content: center;
+            font-size: var(--font-lg);
+            justify-content: flex-end;
         }
 
-        .nav-item {
-            transform: translateX(20px);
-            animation: fadeLeft 0.4s ease forwards;
+        .mobile-contact {
+            display: block;
+        }
+
+        .contact-nav {
+            display: none;
         }
     }
 

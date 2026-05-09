@@ -134,6 +134,27 @@
         color: var(--color-accent);
     }
 
+    @media (max-width: 760px) {
+        .contact-page {
+            padding: var(--space-lg) var(--space-md);
+        }
+        
+        .contact-page h1 {
+            margin-bottom: var(--space-md);
+            font-size: var(--font-xxl);
+        }
+        
+        .contact-form {
+            max-width: 500px;
+            gap: var(--space-md);
+        }
+
+        .input-group input,
+        .input-group textarea {
+            font-size: var(--font-sm);
+        }
+    }
+
     @media (min-width: 1300px) {
         .contact-form {
             max-width: 1000px;

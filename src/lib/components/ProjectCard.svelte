@@ -48,6 +48,21 @@
         line-height: 1.2;
     }
 
+    @media (max-width: 760px) {
+        .project-card {
+            width: 300px;
+        }
+
+        h3 {
+            font-size: (--font-base);
+            margin-bottom: var(--space-sm);
+        }
+
+        p {
+            font-size: var(--font-sm);
+        }
+    }
+
     @media (min-width: 1300px) {
         .project-card {
             width: 500px;
