@@ -6,17 +6,20 @@
         {
             title: 'Games',
             description: 'Game development projects',
-            href: base + '/projects/games'
+            href: base + '/projects/games',
+            image: base + '/images/games/project2/main.png'
         },
         {
             title: 'Digital Art',
             description: 'Animations, illustrations, and digital media projects',
-            href: base + '/projects/digital-art'
+            href: base + '/projects/digital-art',
+            image: base + '/images/digital-art/project1/gif1.gif'
         },
         {
             title: '3D Models',
             description: '3D assets, renders, and modelling projects',
-            href: base + '/projects/3d'
+            href: base + '/projects/3d',
+            image: base + '/images/3d/project3/main.jpg'
         }
     ];
 </script>
@@ -27,7 +30,7 @@
     <div class="category-grid">
         {#each categories as category}
             <div class="category-card">
-                <div class="placeholder-art image"></div>
+                <img class="image" src={category.image} alt={category.title}>
                 <h2>{category.title}</h2>
                 <p>{category.description}</p>
                 <a class="button"  href={category.href}>Continue ➜</a>

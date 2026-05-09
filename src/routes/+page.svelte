@@ -10,17 +10,20 @@
     {
         title: 'The Descent',
         description: 'Advance through the floors, defeat the monster, and find a way to escape!',
-        href: base + '/projects/games/project3'
+        href: base + '/projects/games/project3',
+        image: base + '/images/games/project3/main.png'
     },
     {
         title: 'Fantasy Game Original Character',
         description: 'Concept art of an original character designed for a fantasy-style game.',
-        href: base + '/projects/digital-art/project2'
+        href: base + '/projects/digital-art/project2',
+        image: base + '/images/digital-art/project2/ss1.png'
     },
     {
         title: '3D Game Asset',
         description: 'A 3D model of a tube slide used as a finish goal in a game.',
-        href: base + '/projects/3d/project1'
+        href: base + '/projects/3d/project1',
+        image: base + '/images/3d/project1/main.jpg'
     }
    ];
 
@@ -63,6 +66,7 @@
                     title={project.title}
                     description={project.description}
                     href={project.href}
+                    image={project.image}
                 />
             {/each}
         </div>

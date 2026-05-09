@@ -2,10 +2,11 @@
     export let title;
     export let description = '';
     export let href = '#';
+    export let image = '';
 </script>
 
 <a href={href} class="project-card">
-    <div class="placeholder-art project-image" role="img" aria-label="Project image"></div>
+    <img class="card-image" src={image} alt={title}>
     <h3>{title}</h3>
     {#if description}
         <p>{description}</p>
@@ -28,7 +29,7 @@
         box-shadow: 0 0 20px var(--color-accent);
     }
 
-    .project-image {
+    .card-image {
         width: 100%;
         aspect-ratio: 16 / 9;
         border-radius: var(--radius-md);
