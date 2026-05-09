@@ -2,6 +2,7 @@
     // Import components
     import Header from "$lib/Header.svelte";
     import Footer from "$lib/Footer.svelte";
+    import {page} from "$app/state";
 </script>
 
 <svelte:head>
@@ -15,7 +16,11 @@
 
     <!-- Page Content -->
     <main id="main-content" tabindex="-1">
-        <slot />
+        {#key page.url.pathname}
+            <div class="page-transition">
+                <slot />
+            </div>
+        {/key}
     </main>
 
     <!-- Footer -->
@@ -53,6 +58,23 @@
         width: 100%;
         opacity: 0.66;
         z-index: -1;
+    }
+
+    .page-transition {
+        width: 100%;
+        animation: pageLoad 0.6s ease;
+    }
+
+    @keyframes pageLoad {
+        from {
+            opacity: 0;
+            transform: translateY(18px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     @media (max-width: 768px) {
