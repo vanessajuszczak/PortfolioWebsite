@@ -36,6 +36,10 @@
         border: 2px solid var(--color-accent);
         border-radius: var(--radius-md);
         font-size: var(--font-md);
+        background: linear-gradient(180deg, var(--color-accent-soft) 0%, var(--color-purple-top) 100%);
+        color: var(--text-contrast);
+        font-weight: 700;
+        box-shadow: inset 0 1px 4px var(--color-purple-top);
 
         transition: transform var(--transition-fast), box-shadow var(--transition-fast);
     }
