@@ -5,12 +5,13 @@
 <section class="cv-page">
     <h1>CV</h1>
 
-    <a class="download-button" href={base + '/cv/vanessa-cv.pdf'} download >
+    <a class="download-button" href={base + '/cv/vanessa-cv.docx'} download >
         Download CV
     </a>
 
     <div class="cv-image">
-        <img src={base + '/cv/cv-image.png'} alt="CV Preview" />
+        <img src={base + '/cv/vanessa-cv-image1.png'} alt="CV Preview - Page 1" />
+        <img src={base + '/cv/vanessa-cv-image2.png'} alt="CV Preview - Page 2" />
     </div>
 </section>
 
@@ -53,6 +54,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        gap: var(--space-md);
     }
 
     .cv-image img {
