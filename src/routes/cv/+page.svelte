@@ -53,6 +53,7 @@
     .cv-image {
         width: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         gap: var(--space-md);
     }
