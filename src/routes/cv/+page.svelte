@@ -59,8 +59,10 @@
     }
 
     .cv-image img {
+        display: block;
         width: 100%;
         max-width: 900px;
+        margin: 0 auto;
 
         border-radius: var(--radius-md);
         border: 2px solid var(--color-line);
