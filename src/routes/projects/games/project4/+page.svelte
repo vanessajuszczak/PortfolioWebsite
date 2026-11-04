@@ -4,19 +4,19 @@
 
 <section class="project-page">
     <div class="hero-image">
-        <img src={base + '/images/games/project4/main.jpg'} alt="Game 4 Screenshot" />
+        <img src={base + '/images/games/project4/main.png'} alt="Game 4 Screenshot" />
     </div>
 
     <div class="project-info">
-        <h1>Game 4</h1>
+        <h1>The Descent</h1>
 
         <p class="project-desc">
-            Description.
+            Advance through the floors, defeat the monster, and find a way to escape!
         </p>
 
         <div class="project-details">
-            <p><strong>Software:</strong> software</p>
-            <p><strong>Year:</strong> year</p>
+            <p><strong>Software:</strong> Visual Studio Code</p>
+            <p><strong>Year:</strong> 2025</p>
         </div>
     </div>
 </section>
@@ -25,9 +25,9 @@
     <h2>Gallery</h2>
 
     <div class="gallery-grid">
-        <img src={base + '/images/games/project4/main.jpg'} alt="Screenshot" />
-        <img src={base + '/images/games/project4/main.jpg'} alt="Screenshot" />
-        <img src={base + '/images/games/project4/main.jpg'} alt="Screenshot" />
+        <img src={base + '/images/games/project4/ss1.png'} alt="Screenshot" />
+        <img src={base + '/images/games/project4/ss2.png'} alt="Screenshot" />
+        <img src={base + '/images/games/project4/ss3.png'} alt="Screenshot" />
     </div>
 </div>
 

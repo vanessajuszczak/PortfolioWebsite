@@ -10,9 +10,8 @@
         games: [
             {title: 'Shopping Collection Game', description: 'The player must add items from their shopping list to the cart.', href: base + '/projects/games/project1', image: base + '/images/games/project1/main.png'},
             {title: 'Side Scrolling Shooter Game', description: 'The player must shoot enemies to reach a score of 50.', href: base + '/projects/games/project2', image: base + '/images/games/project2/main.png'},
-            {title: 'The Descent', description: 'Advance through the floors, defeat the monster, and find a way to escape!', href: base + '/projects/games/project3', image: base + '/images/games/project3/main.png'},
-            {title: 'Game 4', description: 'Desc', href: base + '/projects/games/project4', image: base + '/images/games/project4/main.jpg'},
-            {title: 'Game 5', description: 'Desc', href: base + '/projects/games/project5', image: base + '/images/games/project5/main.jpg'}
+            {title: 'Midnight Mayhem', description: 'Survive the night, battle waves of enemies, and aim for the highest score!', href: base + '/projects/games/project3', image: base + '/images/games/project3/game.png'},
+            {title: 'The Descent', description: 'Advance through the floors, defeat the monster, and find a way to escape!', href: base + '/projects/games/project4', image: base + '/images/games/project4/main.png'}
         ],
         'digital-art': [
             {title: 'Basic Animations', description: 'Three basic beginner animations to showcase skills.', href: base + '/projects/digital-art/project1', image: base + '/images/digital-art/project1/gif1.gif'},
@@ -24,9 +23,7 @@
         '3d': [
             {title: '3D Game Asset', description: 'A 3D model of a tube slide used as a finish goal in a game.', href: base + '/projects/3d/project1', image: base + '/images/3d/project1/main.jpg'},
             {title: 'School Bus Model', description: 'A 3D model of a school bus with custom UV-mapping.', href: base + '/projects/3d/project2', image: base + '/images/3d/project2/main.jpg'},
-            {title: 'Random Basic 3D Models', description: 'A compilation of random 3D models, including scaffolding, a castle, a mug, and hands.', href: base + '/projects/3d/project3', image: base + '/images/3d/project3/main.jpg'},
-            {title: '3D Model 4', description: 'Desc', href: base + '/projects/3d/project4', image: base + '/images/3d/project4/main.jpg'},
-            {title: '3D Model 5', description: 'Desc', href: base + '/projects/3d/project5', image: base + '/images/3d/project5/main.jpg'}
+            {title: 'Random Basic 3D Models', description: 'A compilation of random 3D models, including scaffolding, a castle, a mug, and hands.', href: base + '/projects/3d/project3', image: base + '/images/3d/project3/main.jpg'}
         ]
     };
 

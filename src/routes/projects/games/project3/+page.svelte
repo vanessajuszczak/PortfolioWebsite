@@ -4,18 +4,19 @@
 
 <section class="project-page">
     <div class="hero-image">
-        <img src={base + '/images/games/project3/main.png'} alt="Game 3 Screenshot" />
+        <img src={base + '/images/games/project3/game.png'} alt="Game 3 Screenshot" />
     </div>
 
     <div class="project-info">
-        <h1>The Descent</h1>
+        <h1>Midnight Mayhem</h1>
 
         <p class="project-desc">
-            Advance through the floors, defeat the monster, and find a way to escape!
+            Survive the night, battle waves of enemies and aim for the highest score!
         </p>
+        <p><strong>My Contribution:</strong> Player character design and development of some gameplay mechanics.</p>
 
         <div class="project-details">
-            <p><strong>Software:</strong> Visual Studio Code</p>
+            <p><strong>Software:</strong> Visual Studio 2022</p>
             <p><strong>Year:</strong> 2025</p>
         </div>
     </div>
@@ -25,9 +26,9 @@
     <h2>Gallery</h2>
 
     <div class="gallery-grid">
-        <img src={base + '/images/games/project3/ss1.png'} alt="Screenshot" />
-        <img src={base + '/images/games/project3/ss2.png'} alt="Screenshot" />
-        <img src={base + '/images/games/project3/ss3.png'} alt="Screenshot" />
+        <img src={base + '/images/games/project3/mainmenu.png'} alt="Screenshot" />
+        <img src={base + '/images/games/project3/healthloss.png'} alt="Screenshot" />
+        <img src={base + '/images/games/project3/jump.png'} alt="Screenshot" />
     </div>
 </div>
 

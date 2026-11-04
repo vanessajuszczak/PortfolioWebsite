@@ -10,8 +10,8 @@
     {
         title: 'The Descent',
         description: 'Advance through the floors, defeat the monster, and find a way to escape!',
-        href: base + '/projects/games/project3',
-        image: base + '/images/games/project3/main.png'
+        href: base + '/projects/games/project4',
+        image: base + '/images/games/project4/main.png'
     },
     {
         title: 'Fantasy Game Original Character',
