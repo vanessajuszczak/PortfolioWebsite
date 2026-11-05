@@ -4,19 +4,19 @@
 
 <section class="project-page">
     <div class="hero-image">
-        <img src={base + '/images/digital-art/project3/gif3.gif'} alt="Artwork 3 Gif" />
+        <img src={base + '/images/digital-art/project3/thumbnail.png'} alt="Thumbnail for productive website wireframes" />
     </div>
 
     <div class="project-info">
-        <h1>Walk Cycle Animation</h1>
+        <h1>Productive Website Wireframes</h1>
 
         <p class="project-desc">
-            An animation showcasing a walk cycle of an original character.
+            A collection of website wireframes outlining the layout and interface of a productivity-focused website.
         </p>
 
         <div class="project-details">
-            <p><strong>Software:</strong> Procreate</p>
-            <p><strong>Year:</strong> 2025</p>
+            <p><strong>Software:</strong> Penpot</p>
+            <p><strong>Year:</strong> 2026</p>
         </div>
     </div>
 </section>
@@ -25,9 +25,32 @@
     <h2>Gallery</h2>
 
     <div class="gallery-grid">
-        <img src={base + '/images/digital-art/project3/gif1.gif'} alt="Gif" />
-        <img src={base + '/images/digital-art/project3/gif2.gif'} alt="Gif" />
-        <img src={base + '/images/digital-art/project3/main.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project3/1.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project3/2.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project3/3.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project3/4.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project3/5.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project3/6.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project3/7.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project3/8.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project3/9.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project3/10.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project3/11.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project3/12.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project3/13.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project3/14.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project3/15.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project3/16.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project3/17.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project3/18.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project3/19.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project3/20.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project3/21.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project3/22.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project3/23.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project3/24.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project3/25.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project3/26.png'} alt="Screenshot" />
     </div>
 </div>
 

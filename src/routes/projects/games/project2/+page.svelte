@@ -8,14 +8,17 @@
     </div>
 
     <div class="project-info">
-        <h1>Side Scrolling Shooter Game</h1>
+        <h1>The Descent</h1>
 
         <p class="project-desc">
-            The player must shoot enemies to reach a score of 50 without losing all their lives, and before the time runs out.
+            Advance through the floors, defeat the monster, and find a way to escape!
+        </p>
+        <p>
+            <a class="link" href="https://ui-programming-25-26.codeberg.page/c00311575-juszczak-vanessa-project/" target="_blank">The Descent - Play Here!</a>
         </p>
 
         <div class="project-details">
-            <p><strong>Software:</strong> Visual Studio 2022</p>
+            <p><strong>Software:</strong> Visual Studio Code</p>
             <p><strong>Year:</strong> 2025</p>
         </div>
     </div>
@@ -89,6 +92,18 @@
     .project-desc {
         margin-bottom: var(--space-lg);
         font-size: var(--font-lg);
+    }
+
+    .link {
+        color: var(--color-accent);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        font-weight: 600;
+        transition: color var(--transition-fast);
+    }
+
+    .link:hover {
+        color: var(--text-contrast);
     }
 
     .project-details {

@@ -4,19 +4,29 @@
 
 <section class="project-page">
     <div class="hero-image">
-        <img src={base + '/images/games/project1/main.png'} alt="Game 1 Screenshot" />
+        <img src={base + '/images/games/project1/thumbnail.png'} alt="Game 1 Thumbnail" />
     </div>
 
     <div class="project-info">
-        <h1>Shopping Collection Game</h1>
+        <h1>The Eye's Path</h1>
 
         <p class="project-desc">
-            The player must add items from their shopping list to the cart.
+            Embark on a journey through a magical world in The Eye's Path, a 2D puzzle game where observation, precision, and problem-solving are the keys to progress.
+            Guide An Phiast through the environment by using their unique third-eye ability to select and move objects. Position the objects to bridge gaps, create a path forward, and help An Phiast find their lost friend.
+            <strong>Developed as a group project for the Animation Dingle 2027 Game Sting Competition.</strong>
+        </p>
+        <p><strong>My Contribution:</strong> Developed and implemented the majority of the playable prototype in Unity, including core gameplay mechanics, cloud movement and selection, puzzle logic, character movement, level progression and the victory screen.
+        Also designed the lost friend character and created initial character moodboards and an environment concept sketch.</p>
+        <p>
+            <a class="link" href="https://vanessajuszczak.itch.io/the-eyes-path" target="_blank">The Eye's Path - Play Here!</a>
+        </p>
+        <p>
+            <a class="link" href="https://drive.google.com/drive/folders/1vqHWY5xqcw5YpLo1MRH03j6N_FOjSeIM?usp=sharing" target="_blank">Google Onedrive</a>
         </p>
 
         <div class="project-details">
-            <p><strong>Software:</strong> Visual Studio 2022</p>
-            <p><strong>Year:</strong> 2025</p>
+            <p><strong>Software:</strong> Unity, Procreate</p>
+            <p><strong>Year:</strong> 2026</p>
         </div>
     </div>
 </section>
@@ -25,9 +35,15 @@
     <h2>Gallery</h2>
 
     <div class="gallery-grid">
-        <img src={base + '/images/games/project1/ss1.png'} alt="Screenshot" />
-        <img src={base + '/images/games/project1/ss2.png'} alt="Screenshot" />
-        <img src={base + '/images/games/project1/ss3.png'} alt="Screenshot" />
+        <img src={base + '/images/games/project1/concept-sketches1.png'} alt="Screenshot" />
+        <img src={base + '/images/games/project1/concept-sketches2.png'} alt="Screenshot" />
+        <img src={base + '/images/games/project1/turnaround.png'} alt="Screenshot" />
+        <img src={base + '/images/games/project1/main.jpeg'} alt="Screenshot" />
+        <img src={base + '/images/games/project1/walk-spritesheet.png'} alt="Screenshot" />
+        <img src={base + '/images/games/project1/background.png'} alt="Screenshot" />
+        <img src={base + '/images/games/project1/game.png'} alt="Screenshot" />
+        <img src={base + '/images/games/project1/game2.png'} alt="Screenshot" />
+        <img src={base + '/images/games/project1/game3.png'} alt="Screenshot" />
     </div>
 </div>
 
@@ -65,6 +81,7 @@
         transform: translateY(-2px);
         box-shadow: 0 0 10px var(--color-accent);
     }
+
     .project-page {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -88,6 +105,18 @@
     .project-desc {
         margin-bottom: var(--space-lg);
         font-size: var(--font-lg);
+    }
+
+    .link {
+        color: var(--color-accent);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        font-weight: 600;
+        transition: color var(--transition-fast);
+    }
+
+    .link:hover {
+        color: var(--text-contrast);
     }
 
     .project-details {
@@ -148,7 +177,7 @@
             font-size: var(--font-lg);
         }
 
-        .back-button {
+         .back-button {
             font-size: var(--font-lg);
         }
     }

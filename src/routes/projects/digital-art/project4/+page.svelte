@@ -4,18 +4,22 @@
 
 <section class="project-page">
     <div class="hero-image">
-        <img src={base + '/images/digital-art/project4/gif3.gif'} alt="Artwork 4 Gif" />
+        <img src={base + '/images/digital-art/project4/1.png'} alt="Screenshot of homepage" />
     </div>
 
     <div class="project-info">
-        <h1>Head-turn Animation</h1>
+        <h1>Carlow Tourism Website</h1>
 
         <p class="project-desc">
-            An animation showcasing a head-turn with expression change of an original character.
+            A website developed to showcase Carlow's attractions, activities and local visitor information.
+        </p>
+        <p><strong>My Contribution:</strong> Homepage and Things to Do page design and development, and overall website styling.</p>
+        <p>
+            <a class="link" href="https://malachyneal.github.io/PowerpuffGirls/" target="_blank">Live Carlow Tourism Website</a>
         </p>
 
         <div class="project-details">
-            <p><strong>Software:</strong> Procreate</p>
+            <p><strong>Software:</strong> Visual Studio Code (Sveltekit)</p>
             <p><strong>Year:</strong> 2025</p>
         </div>
     </div>
@@ -25,9 +29,18 @@
     <h2>Gallery</h2>
 
     <div class="gallery-grid">
-        <img src={base + '/images/digital-art/project4/gif1.gif'} alt="Gif" />
-        <img src={base + '/images/digital-art/project4/gif2.gif'} alt="Gif" />
-        <img src={base + '/images/digital-art/project4/main.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project4/1.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project4/2.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project4/3.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project4/4.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project4/5.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project4/6.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project4/7.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project4/8.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project4/9.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project4/10.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project4/11.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project4/12.png'} alt="Screenshot" />
     </div>
 </div>
 
@@ -89,6 +102,18 @@
     .project-desc {
         margin-bottom: var(--space-lg);
         font-size: var(--font-lg);
+    }
+
+    .link {
+        color: var(--color-accent);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        font-weight: 600;
+        transition: color var(--transition-fast);
+    }
+
+    .link:hover {
+        color: var(--text-contrast);
     }
 
     .project-details {

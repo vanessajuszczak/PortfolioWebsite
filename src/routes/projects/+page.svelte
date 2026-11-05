@@ -7,13 +7,13 @@
             title: 'Games',
             description: 'Game development projects',
             href: base + '/projects/games',
-            image: base + '/images/games/project2/main.png'
+            image: base + '/images/games/project4/main.png'
         },
         {
             title: 'Digital Art',
             description: 'Animations, illustrations, and digital media projects',
             href: base + '/projects/digital-art',
-            image: base + '/images/digital-art/project1/gif1.gif'
+            image: base + '/images/digital-art/project6/turnaround.png'
         },
         {
             title: '3D Models',

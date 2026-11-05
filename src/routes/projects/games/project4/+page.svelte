@@ -8,14 +8,14 @@
     </div>
 
     <div class="project-info">
-        <h1>The Descent</h1>
+        <h1>Side Scrolling Shooter Game</h1>
 
         <p class="project-desc">
-            Advance through the floors, defeat the monster, and find a way to escape!
+            The player must shoot enemies to reach a score of 50 without losing all their lives, and before the time runs out.
         </p>
 
         <div class="project-details">
-            <p><strong>Software:</strong> Visual Studio Code</p>
+            <p><strong>Software:</strong> Visual Studio 2022</p>
             <p><strong>Year:</strong> 2025</p>
         </div>
     </div>

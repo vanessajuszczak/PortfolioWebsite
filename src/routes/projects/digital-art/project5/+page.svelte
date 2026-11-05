@@ -4,19 +4,19 @@
 
 <section class="project-page">
     <div class="hero-image">
-        <img src={base + '/images/digital-art/project5/main.jpg'} alt="Artwork 5 Screenshot" />
+        <img src={base + '/images/digital-art/project5/thumbnail.png'} alt="Thumbnail of portfolio website wireframes" />
     </div>
 
     <div class="project-info">
-        <h1>Artwork 5</h1>
+        <h1>Portfolio Website Wireframes</h1>
 
         <p class="project-desc">
-            Description.
+            Wireframes outlining the layout and structure of this personal portfolio website.
         </p>
 
         <div class="project-details">
-            <p><strong>Software:</strong> software</p>
-            <p><strong>Year:</strong> year</p>
+            <p><strong>Software:</strong> Penpot</p>
+            <p><strong>Year:</strong> 2025</p>
         </div>
     </div>
 </section>
@@ -25,9 +25,14 @@
     <h2>Gallery</h2>
 
     <div class="gallery-grid">
-        <img src={base + '/images/digital-art/project5/main.jpg'} alt="Screenshot" />
-        <img src={base + '/images/digital-art/project5/main.jpg'} alt="Screenshot" />
-        <img src={base + '/images/digital-art/project5/main.jpg'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project5/1.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project5/2.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project5/3.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project5/4.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project5/5.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project5/6.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project5/7.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project5/8.png'} alt="Screenshot" />
     </div>
 </div>
 

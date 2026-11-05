@@ -4,19 +4,22 @@
 
 <section class="project-page">
     <div class="hero-image">
-        <img src={base + '/images/digital-art/project1/gif1.gif'} alt="Artwork 1 Screenshot" />
+        <img src={base + '/images/digital-art/project1/ZINE-1.png'} alt="Front Cover of Zine" />
     </div>
 
     <div class="project-info">
-        <h1>Basic Animations</h1>
+        <h1>Places I Never Left</h1>
 
         <p class="project-desc">
-            Three basic beginner animations to showcase skills.
+            An original zine design exploring fictional places that still feel like home, using a scrapbook-inspired aesthetic.
+        </p>
+        <p>
+            <a class="link" href="https://heyzine.com/flip-book/4b63d4eb37.html" target="_blank">Digital Zine Flipbook</a>
         </p>
 
         <div class="project-details">
-            <p><strong>Software:</strong> Procreate</p>
-            <p><strong>Year:</strong> 2025</p>
+            <p><strong>Software:</strong> Adobe Photoshop 2025</p>
+            <p><strong>Year:</strong> 2026</p>
         </div>
     </div>
 </section>
@@ -25,9 +28,14 @@
     <h2>Gallery</h2>
 
     <div class="gallery-grid">
-        <img src={base + '/images/digital-art/project1/gif1.gif'} alt="Gif" />
-        <img src={base + '/images/digital-art/project1/gif2.gif'} alt="Gif" />
-        <img src={base + '/images/digital-art/project1/gif3.gif'} alt="Gif" />
+        <img src={base + '/images/digital-art/project1/ZINE-1.png'} alt="Front cover of zine" />
+        <img src={base + '/images/digital-art/project1/ZINE-2.png'} alt="Page 1 of zine" />
+        <img src={base + '/images/digital-art/project1/ZINE-3.png'} alt="Page 2 of zine" />
+        <img src={base + '/images/digital-art/project1/ZINE-4.png'} alt="Page 3 of zine" />
+        <img src={base + '/images/digital-art/project1/ZINE-5.png'} alt="Page 4 of zine" />
+        <img src={base + '/images/digital-art/project1/ZINE-6.png'} alt="Page 5 of zine" />
+        <img src={base + '/images/digital-art/project1/ZINE-7.png'} alt="Page 6 of zine" />
+        <img src={base + '/images/digital-art/project1/ZINE-8.png'} alt="Back cover of zine" />
     </div>
 </div>
 
@@ -89,6 +97,18 @@
     .project-desc {
         margin-bottom: var(--space-lg);
         font-size: var(--font-lg);
+    }
+
+    .link {
+        color: var(--color-accent);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        font-weight: 600;
+        transition: color var(--transition-fast);
+    }
+
+    .link:hover {
+        color: var(--text-contrast);
     }
 
     .project-details {

@@ -4,19 +4,19 @@
 
 <section class="project-page">
     <div class="hero-image">
-        <img src={base + '/images/digital-art/project2/main.png'} alt="Artwork 2 Screenshot" />
+        <img src={base + '/images/digital-art/project2/currentFlower.gif'} alt="Final flower gif" />
     </div>
 
     <div class="project-info">
-        <h1>Fantasy Game Original Character</h1>
+        <h1>Visual Clock Design</h1>
 
         <p class="project-desc">
-            Concept art of an original character designed for a fantasy-style game.
+            Digital animations exploring different visual designs for a clock, ultimately settling for a flower design.
         </p>
 
         <div class="project-details">
-            <p><strong>Software:</strong> Adobe Photoshop 2025</p>
-            <p><strong>Year:</strong> 2025</p>
+            <p><strong>Software:</strong> Procreate</p>
+            <p><strong>Year:</strong> 2026</p>
         </div>
     </div>
 </section>
@@ -25,9 +25,11 @@
     <h2>Gallery</h2>
 
     <div class="gallery-grid">
-        <img src={base + '/images/digital-art/project2/ss1.png'} alt="Screenshot" />
-        <img src={base + '/images/digital-art/project2/ss2.jpeg'} alt="Screenshot" />
-        <img src={base + '/images/digital-art/project2/ss3.png'} alt="Screenshot" />
+        <img src={base + '/images/digital-art/project2/candle.gif'} alt="Gif" />
+        <img src={base + '/images/digital-art/project2/spiral.gif'} alt="Gif" />
+        <img src={base + '/images/digital-art/project2/firstFlower.gif'} alt="Gif" />
+        <img src={base + '/images/digital-art/project2/secondFlower.gif'} alt="Gif" />
+        <img src={base + '/images/digital-art/project2/currentFlower.gif'} alt="Gif" />
     </div>
 </div>
 

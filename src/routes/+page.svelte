@@ -10,14 +10,14 @@
     {
         title: 'The Descent',
         description: 'Advance through the floors, defeat the monster, and find a way to escape!',
-        href: base + '/projects/games/project4',
-        image: base + '/images/games/project4/main.png'
+        href: base + '/projects/games/project2',
+        image: base + '/images/games/project2/main.png'
     },
     {
-        title: 'Fantasy Game Original Character',
-        description: 'Concept art of an original character designed for a fantasy-style game.',
-        href: base + '/projects/digital-art/project2',
-        image: base + '/images/digital-art/project2/ss1.png'
+        title: 'Pixel Art Game Assets Project - Concept Art for Games',
+        description: 'A Pixel Art Game Assets Project for the Concept Art for Games module.',
+        href: base + '/projects/digital-art/project10',
+        image: base + '/images/digital-art/project10/thumbnail.gif'
     },
     {
         title: '3D Game Asset',
