@@ -34,6 +34,8 @@
                 development and enjoy bringing ideas and characters to life through my work.
             </p>
 
+            <br>
+
             <h2>VALORANT Game Changers - Competitive Player</h2>
             <p>
                 Outside of my studies, I've also competed in the VALORANT Game Changers tournament scene as part of a self-formed team.
