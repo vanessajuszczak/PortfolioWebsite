@@ -2,12 +2,13 @@
     import { base } from '$app/paths';
 
     const skills = [
-        'UI/UX Design',
-        'Game Development',
         'Digital Illustration',
+        'Character Design',
+        '2D Game Art',
         'Animation',
+        'Game Development',
         '3D Modelling',
-        'Responsive Web Design'
+        'UI/UX and Responsive Web Design'
     ];
 </script>
 
@@ -21,15 +22,23 @@
             <h1>About Me</h1>
 
             <p>
-                Hi, I'm Vanessa, an Interactive Digital Art and Design student with
-                an interest in digital media, game development, and user-focused design.
-                My work combines creativity with development across areas including 
-                games, animation, illustration, and 3D modelling.
+                Hi, I'm Vanessa, an Interactive Digital Art and Design student at SETU Carlow
+                with an interest in digital illustration, character design, animation and game art.
+                Through my university projects, I've explored different aspects of digital creativity,
+                from developing original characters and visual assets to creating animations and
+                interactive game experiences.
             </p>
 
             <p>
-                I focus on creating visually engaging experiences in my projects, 
-                while also improving usability and interaction design.
+                I'm especially interested in the visual side of game
+                development and enjoy bringing ideas and characters to life through my work.
+            </p>
+
+            <h2>VALORANT Game Changers - Competitive Player</h2>
+            <p>
+                Outside of my studies, I've also competed in the VALORANT Game Changers tournament scene as part of a self-formed team.
+                I often took on an in-game leader role, developing strategies, directing team communication and
+                helping coordinate decisions during matches.
             </p>
 
             <div class="skills-section">
